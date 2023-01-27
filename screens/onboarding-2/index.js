@@ -1,7 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, ScrollView, Image, Pressable } from "react-native";
 
-const Onboarding2 = () => {
+const Onboarding2 = ({
+  navigation
+}) => {
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={require("./assets/back.png")} style={styles.back} />
@@ -59,9 +61,9 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   imgContainer: {
-    height: 460,
+    height: 260,
     width: 343,
-    backgroundColor: "#E5E5EA",
+    backgroundColor: "#5cc07a",
     borderRadius: 10,
     alignSelf: "center"
   }
@@ -76,12 +78,12 @@ const Button = params => {
   const btnText = {
     color: params.outline ? "#000" : "#fff"
   };
-  return <View style={buttonStyles.btnContainer}>
+  return <Pressable onPress={() => navigation.navigation.navigate("largeGrid1", {})}><View style={buttonStyles.btnContainer}>
       <Pressable style={[buttonStyles.btn, btnStyle]} onPress={params.onPress}>
         <Text style={[buttonStyles.btnText, btnText]}>{params.buttonText}</Text>
         <View style={styles.childrenContainer}>{params.children}</View>
       </Pressable>
-    </View>;
+    </View></Pressable>;
 };
 
 const buttonStyles = StyleSheet.create({
