@@ -1,3 +1,4 @@
+import { ImageBackground } from "react-native";
 import React from "react";
 import { Text, View, StyleSheet, ScrollView, Image, Pressable } from "react-native";
 
@@ -12,7 +13,7 @@ const Onboarding2 = ({
       </View>
 
       <View style={styles.imgContainer}>
-      </View>
+      <ImageBackground source={require("./Screenshot 2023-01-20 at 5.02.37 PM.png")} resizeMode="cover" style={styles.RZhxkyBx}></ImageBackground></View>
       <Text style={styles.title}>Onboarding</Text>
       <View style={styles.descContainer}>
         <Text style={styles.desc}>
@@ -66,6 +67,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#5cc07a",
     borderRadius: 10,
     alignSelf: "center"
+  },
+  RZhxkyBx: {
+    height: 300,
+    top: -12,
+    left: 0
   }
 });
 
