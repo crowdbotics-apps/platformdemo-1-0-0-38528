@@ -1,3 +1,4 @@
+import { RadioGroup } from "react-native-radio-buttons-group";
 import { TextInput } from "react-native";
 import { View } from "react-native";
 import React from "react";
@@ -10,7 +11,19 @@ const Untitled2 = () => {
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><View style={styles.HskqwoqS}><View style={styles.iLFRnesg}></View></View><TextInput style={styles.NnkwhfeH} value=""></TextInput></ScrollView>
+    }}><View style={styles.HskqwoqS}><View style={styles.iLFRnesg}></View></View><TextInput style={styles.NnkwhfeH} value=""></TextInput><RadioGroup style={styles.qzEaBfIw} radioButtons={[{
+        id: "0",
+        value: "0",
+        label: "Option 1"
+      }, {
+        id: "1",
+        value: "1",
+        label: "Option 2"
+      }, {
+        id: "2",
+        value: "2",
+        label: "opt 3"
+      }]} layout="column"></RadioGroup></ScrollView>
     </SafeAreaView>;
 };
 
@@ -41,6 +54,10 @@ const styles = StyleSheet.create({
     top: 266.5,
     left: 6.5,
     position: "absolute"
+  },
+  qzEaBfIw: {
+    width: 120,
+    height: 70
   }
 });
 export default Untitled2;
