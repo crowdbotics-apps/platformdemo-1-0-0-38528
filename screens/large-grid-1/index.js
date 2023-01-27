@@ -1,3 +1,4 @@
+import { ImageBackground } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 
@@ -9,7 +10,7 @@ const LargeGrid1 = () => {
             {
             /* YOUR CODE HERE */
           }
-          </View>
+          <ImageBackground style={styles.wXtocYEs} source={require("./Screenshot 2023-01-27 at 7.01.57 PM.png")} resizeMode="cover"></ImageBackground></View>
           <View style={styles.col}>
             {
             /* YOUR CODE HERE */
@@ -59,6 +60,18 @@ const styles = StyleSheet.create({
   textHeading1: {
     fontSize: 20,
     fontWeight: "bold"
+  },
+  wXtocYEs: {
+    width: 316,
+    height: 325,
+    position: "absolute",
+    top: -20,
+    left: 0,
+    flexDirection: "column",
+    flex: "1",
+    alignItems: "center",
+    justifyContent: "center",
+    flexWrap: "wrap"
   }
 });
 export default LargeGrid1;
