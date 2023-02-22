@@ -1,30 +1,12 @@
-import { RadioGroup } from "react-native-radio-buttons-group";
-import { TextInput } from "react-native";
+import { ImageBackground } from "react-native";
 import { View } from "react-native";
 import React from "react";
-import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 
 const Untitled2 = () => {
   return <SafeAreaView style={styles.safeArea}>
-        <ScrollView contentContainerStyle={{
-      backgroundColor: '#f0f0f1',
-      padding: 10,
-      position: 'relative',
-      flex: 1
-    }}><View style={styles.HskqwoqS}><View style={styles.iLFRnesg}></View></View><TextInput style={styles.NnkwhfeH} value=""></TextInput><RadioGroup style={styles.qzEaBfIw} radioButtons={[{
-        id: "0",
-        value: "0",
-        label: "Option 1"
-      }, {
-        id: "1",
-        value: "1",
-        label: "Option 2"
-      }, {
-        id: "2",
-        value: "2",
-        label: "opt 3"
-      }]} layout="column"></RadioGroup></ScrollView>
-    </SafeAreaView>;
+        
+    <View style={styles.EENXZKxE}></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -58,6 +40,38 @@ const styles = StyleSheet.create({
   qzEaBfIw: {
     width: 120,
     height: 70
+  },
+  EENXZKxE: {
+    height: 200,
+    width: 357,
+    backgroundColor: "#89c3de",
+    borderRadius: 0,
+    color: "#777777"
+  },
+  iCSCmWJT: {
+    width: 112,
+    height: 113,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 10,
+    position: "absolute",
+    left: 123,
+    top: 124,
+    transform: "rotate(0deg)",
+    borderWidth: 3,
+    borderColor: "#ffffff",
+    flexDirection: "row",
+    flex: "1"
+  },
+  llYtiqRC: {
+    width: 97,
+    height: 101,
+    position: "absolute",
+    left: 4,
+    top: 1,
+    transform: "rotate(0deg)"
+  },
+  hzgHOJit: {
+    flex: 1
   }
 });
 export default Untitled2;
