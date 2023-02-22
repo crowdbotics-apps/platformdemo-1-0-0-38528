@@ -6,7 +6,7 @@ import { StyleSheet, SafeAreaView } from "react-native";
 const Untitled2 = () => {
   return <SafeAreaView style={styles.safeArea}>
         
-    <View style={styles.EENXZKxE}></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View></SafeAreaView>;
+    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -72,6 +72,10 @@ const styles = StyleSheet.create({
   },
   hzgHOJit: {
     flex: 1
+  },
+  INXyNypY: {
+    width: 357,
+    height: 200
   }
 });
 export default Untitled2;
