@@ -143,7 +143,7 @@ const btnStyles = StyleSheet.create({
 const ProfileImage = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
       <View style={profileStyles.container}>
-        <Image style={profileStyles.image} resizeMode="contain" source={require("./assets/edit.png")} />
+        <Image style={profileStyles.image} resizeMode="contain" source={require("./profile-1495388545592-e4e376925c59.jpg")} />
       </View>
     </TouchableHighlight>;
 };
@@ -151,15 +151,19 @@ const ProfileImage = props => {
 const profileStyles = StyleSheet.create({
   container: {
     backgroundColor: "#DADADA",
-    height: 108,
-    width: 108,
-    borderRadius: 54,
+    height: 84,
+    width: 90,
+    borderRadius: 10,
     display: "flex",
     alignItems: "center"
   },
   image: {
-    width: 43,
-    marginTop: 21
+    width: 75,
+    marginTop: 21,
+    height: 65,
+    position: "relative",
+    left: 0,
+    top: 0
   }
 });
 
