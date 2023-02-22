@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import { CheckBox } from "react-native-elements";
 import { TextInput } from "react-native";
 import { Text } from "react-native";
@@ -6,10 +7,12 @@ import { View } from "react-native";
 import React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
 
-const Untitled2 = () => {
+const Untitled2 = ({
+  navigation
+}) => {
   return <SafeAreaView style={styles.safeArea}>
         
-    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Name</Text><TextInput style={styles.AvjfIyrm} value="" placeholder="Enter Name" placeholderTextColor="#aeacac"></TextInput><CheckBox style={styles.vkaDzBNS} title="Accept Terms" size={20} checked=""></CheckBox></SafeAreaView>;
+    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Name</Text><TextInput style={styles.AvjfIyrm} value="" placeholder="Enter Name" placeholderTextColor="#aeacac"></TextInput><CheckBox style={styles.vkaDzBNS} title="Accept Terms" size={20} checked=""></CheckBox><Pressable onPress={() => navigation.navigate("largeGrid1", {})}><View style={styles.KmOqXnPi}><Text style={styles.cpQFxWcO}>Save</Text></View></Pressable></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -119,6 +122,30 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 26,
     top: 425
+  },
+  KmOqXnPi: {
+    height: 41,
+    width: 282,
+    backgroundColor: "#ffffff",
+    borderRadius: 12,
+    color: "#777777",
+    position: "absolute",
+    left: 37.5,
+    top: 488,
+    borderColor: "#000000"
+  },
+  cpQFxWcO: {
+    width: 100,
+    height: 22,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "relative",
+    left: 91,
+    top: 9.5,
+    color: "#ffffff",
+    opacity: 1,
+    textAlign: "center"
   }
 });
 export default Untitled2;
