@@ -130,8 +130,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     color: "#777777",
     position: "absolute",
-    left: 37.5,
-    top: 488,
+    left: 41,
+    top: 289,
     borderColor: "#000000"
   },
   cpQFxWcO: {
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     position: "relative",
     left: 91,
     top: 9.5,
-    color: "#ffffff",
+    color: "#000000",
     opacity: 1,
     textAlign: "center"
   }
