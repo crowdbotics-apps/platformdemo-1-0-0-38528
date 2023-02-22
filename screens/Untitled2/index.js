@@ -1,3 +1,4 @@
+import { CheckBox } from "react-native-elements";
 import { TextInput } from "react-native";
 import { Text } from "react-native";
 import { ImageBackground } from "react-native";
@@ -8,7 +9,7 @@ import { StyleSheet, SafeAreaView } from "react-native";
 const Untitled2 = () => {
   return <SafeAreaView style={styles.safeArea}>
         
-    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Name</Text><TextInput style={styles.AvjfIyrm} value="" placeholder="Enter Name" placeholderTextColor="#aeacac"></TextInput><TextInput style={styles.bIOESxrb}></TextInput></SafeAreaView>;
+    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Name</Text><TextInput style={styles.AvjfIyrm} value="" placeholder="Enter Name" placeholderTextColor="#aeacac"></TextInput><TextInput style={styles.bIOESxrb}></TextInput><CheckBox style={styles.vkaDzBNS} title="Accept Terms" size={20} checked=""></CheckBox></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -111,6 +112,13 @@ const styles = StyleSheet.create({
     borderColor: "#cccccc",
     width: 150,
     height: 30
+  },
+  vkaDzBNS: {
+    width: 183,
+    height: 69,
+    position: "absolute",
+    left: 26,
+    top: 425
   }
 });
 export default Untitled2;
