@@ -1,3 +1,4 @@
+import { TextInput } from "react-native";
 import { Text } from "react-native";
 import { ImageBackground } from "react-native";
 import { View } from "react-native";
@@ -7,7 +8,7 @@ import { StyleSheet, SafeAreaView } from "react-native";
 const Untitled2 = () => {
   return <SafeAreaView style={styles.safeArea}>
         
-    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Lorem ipsum…</Text></SafeAreaView>;
+    <View style={styles.EENXZKxE}><ImageBackground style={styles.INXyNypY} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View><View style={styles.iCSCmWJT}><View style={styles.hzgHOJit}><ImageBackground style={styles.llYtiqRC} source={require("./profile-1495388545592-e4e376925c59.jpg")} resizeMode="cover"></ImageBackground></View></View><Text style={styles.ktUqwGtB}>Name</Text><TextInput style={styles.AvjfIyrm} value="" placeholder="Enter Name" placeholderTextColor="#aeacac"></TextInput><TextInput style={styles.bIOESxrb}></TextInput></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -83,7 +84,33 @@ const styles = StyleSheet.create({
     height: 50,
     lineHeight: 14,
     fontSize: 14,
-    borderRadius: 0
+    borderRadius: 0,
+    position: "absolute",
+    left: 35,
+    top: 284
+  },
+  AvjfIyrm: {
+    backgroundColor: "#fbf3fd",
+    borderColor: "#cccccc",
+    width: 291,
+    height: 37,
+    position: "absolute",
+    left: 33,
+    top: 305,
+    color: "#ff0000"
+  },
+  QoEnQANs: {
+    position: "absolute",
+    backgroundColor: "#ffffff",
+    borderColor: "#cccccc",
+    width: 150,
+    height: 30
+  },
+  bIOESxrb: {
+    backgroundColor: "#ffffff",
+    borderColor: "#cccccc",
+    width: 150,
+    height: 30
   }
 });
 export default Untitled2;
